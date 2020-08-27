@@ -1,9 +1,17 @@
 # KeepIndexer
-First indexer with api for Keep Network dapps
-# API reference
-/api/op/tdt_id?lot=<lot size>&token=<token symbol>
-Get random available TDT_ID for given lot size and token.
-sample request: http://127.0.0.1/api/op/tdt_id?lot=1&token=TBTC
-sample response: 0x3a60853992ca5d1e453f4d7a9a1b71eee53af0ad
+Keep Indexer is the first Indexer application that return various data about the Keep network (https://keep.network/) in JSON format (for example, TDT_ID) so that application could be used as a data source by other applications like DApps.
 
-  
+The main purpose of this API is to use it in the Redeem operation in the tBTC DApp (https://github.com/keep-network/tbtc-dapp).
+
+# API reference
+ - GET {host:port}/api/op/tdt_id?lot={amount}&token={token} // to get random TDT_ID by lot size and token symbol
+ - GET {host:port}/api/op/txlist?sender={sender_address} // to get a list of operations by the senders's address
+ - GET {host:port}/api/op/list // get list of all operations
+
+## Sample requests:
+ - http://62.171.139.205:8080/api/op/tdt_id?lot=1&token=TBTC
+ - http://62.171.139.205:8080/api/op/list
+
+
+**Full application description**: placeholder
+
