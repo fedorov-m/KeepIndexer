@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.ComponentModel.DataAnnotations;
 
 namespace KeepIndexer.Storage
@@ -10,6 +11,8 @@ namespace KeepIndexer.Storage
 
 		public int Type { get; set; } //0 - deposit, 1 - redeem
 		
+		public string ContractAddress { get; set; }
+		[JsonIgnore]
 		public Contract Contract { get; set; }
 		public string Sender { get; set; }
 		public ulong Block { get; set; }
