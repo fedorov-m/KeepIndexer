@@ -13,5 +13,5 @@ The main purpose of this API is to use it in the Redeem operation in the tBTC DA
  - http://62.171.139.205:8080/api/op/list
 
 
-**Full application description**: placeholder
+**Full application description**: https://medium.com/@aeantonov/building-keep-network-indexer-tbtc-dapp-improvement-ebdfdbd5994f?source=friends_link&sk=2b5b3f6da6705b0cdeba90b191d0dc4e
 
